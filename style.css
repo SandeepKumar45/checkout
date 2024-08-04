@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #DBDBDB;
+    box-shadow: 0px 0px 0px 4px #0000000D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+    gap: 35px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    width: 100%;
+    min-height: 78px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .checkout {
+    width: 100%;
+    height: 39px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.73px;
+    text-align: center;
+  }
+  
+  .content {
+    width: 100%;
+    height: 34px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: center;
+  }
+  
+  #form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px; 
+  }
+  
+  input {
+    border: none;
+    outline: none;
+    padding: 0px 0px 0px 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .firstname,
+  .lastname {
+    width: 100%; 
+    min-height: 46px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .email {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+  
+  .pincode {
+    width: 100%;
+    min-height: 46px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    position: absolute;
+    top: -7px;
+    left: 12.15px;
+    background-color: #FFFFFF;
+    padding: 0 5px;
+    color: #000;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 0px 10px;
+    display: flex;
+    gap: 3px;
+  }
+
+  input[type="email"] {
+    width: 80%;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .check {
+    display: flex;
+  }
+  
+  .msg {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 10px;
+  }
+  
+  #checkbox {
+    margin-top: 0px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .button {
+    width: 100%;
+    height: 60px;
+    background: #E12828;
+    border-color: #E12828;
+    border-radius: 8px;
+    padding: 0;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 24px; 
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  
+  #status {
+    border: 1px solid black;
+    position: absolute;
+    display: none;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 95%; 
+    height: 95%; 
+    overflow-y: scroll;
+  }
+  
+  .status-content {
+    padding: 30px; 
+    position: relative;
+  }
+  
+  #delivery {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .details {
+    margin-top: 20px;
+    font-family: Inter;
+    font-size: 15px; 
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .close-icon {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+  
+  .close-icon svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .norecord {
+    color: red;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 500px) {
+    .container {
+      padding: 60px; 
+    }
+  
+    .firstname, .lastname {
+      width: auto; 
+    }
+  
+    .icon {
+      right: 10px;
+    }
+  
+    #status {
+      height: 85%; 
+      width: 90%; 
+    }
+  
+    .status-content {
+      padding: 60px; 
+    }
+  
+    .details {
+      font-size: 18px; 
+      font-weight: 500;
+    }
+  
+    .button {
+      font-size: 28px; 
+    }
+  }
+  
